@@ -1,0 +1,19 @@
+
+.logout {
+	margin-top: 1em;
+}
+.custom-image-box {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.input-file {
+	flex: none;
+	width: -webkit-fit-content;
+	width: fit-content;
+	margin-bottom: 1.15em;
+}
+.text {
+	font-size: 14px;
+	color: #333;
+}

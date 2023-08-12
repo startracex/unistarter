@@ -1,0 +1,13 @@
+{
+   "files.exclude": {
+      ".hbuilderx": true,
+      ".vite": true,
+      "node_modules": true,
+      "unpackage": true,
+      "uni.promisify.adaptor.js": true,
+      "uni.scss": true,
+      "uni_modules": true,
+      // "uniCloud*": true,
+      "manifest.json": true,
+   }
+}

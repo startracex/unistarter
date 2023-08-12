@@ -1,0 +1,25 @@
+* {
+   box-sizing: border-box;
+}
+
+input::-ms-reveal,
+input::-ms-clear,
+input::-o-clear {
+   display: none;
+}
+
+a,
+span {
+   display: contents;
+}
+
+
+span {
+   white-space: nowrap;
+}
+
+uni-app,
+uni-page,
+uni-page-body {
+   display: contents;
+}

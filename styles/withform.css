@@ -1,0 +1,33 @@
+.form-pad {
+	width: 80%;
+	max-width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.form-pad .uni-forms {
+	width: 100%;
+}
+
+.form-pad .button,
+.form-pad .buttom {
+	font-size: 16px;
+}
+
+.form-ico .uni-forms-item__label {
+	padding: 0 !important;
+}
+
+.form-ico .is-required {
+	position: absolute;
+}
+
+.form-ico .uni-easyinput {
+	margin-left: .8em;
+}
+
+.form-pad .buttom uni-navigator {
+	padding: .5em;
+}

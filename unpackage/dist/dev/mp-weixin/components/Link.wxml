@@ -1,0 +1,1 @@
+<navigator wx:if="{{a}}" url="{{b}}" open-type="{{c}}" hover-class="{{d}}"><slot></slot></navigator>

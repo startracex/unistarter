@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/page",
+    "pages/settings/page",
+    "pages/index/me/page",
+    "pages/index/message/page",
+    "pages/login/page",
+    "pages/signup/page",
+    "pages/index/token/page",
+    "pages/index/log/page"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Dashbord",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#333333",
+    "list": [
+      {
+        "text": "",
+        "pagePath": "pages/index/page",
+        "iconPath": "static/tab/all.png",
+        "selectedIconPath": "static/tab/all_se.png"
+      },
+      {
+        "text": "",
+        "pagePath": "pages/settings/page",
+        "iconPath": "static/tab/config.png",
+        "selectedIconPath": "static/tab/config_se.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
