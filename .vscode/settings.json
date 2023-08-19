@@ -9,6 +9,7 @@
       "uni_modules": true,
       // "uniCloud*": true,
       "manifest.json": true,
-      "package.json": true
+      "package.json": true,
+      "App.vue": true,
    }
 }

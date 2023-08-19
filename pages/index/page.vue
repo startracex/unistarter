@@ -78,7 +78,7 @@ export default {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	min-height: 42px;
+	min-height: 54px;
 	background-color: #84d4bc;
 	border-radius: .2rem;
 	padding: .5em;
@@ -92,7 +92,6 @@ export default {
 	min-width: 32px;
 	max-height: 40px;
 	min-height: 32px;
-	margin-right: .5rem;
 }
 
 .link-pad {
