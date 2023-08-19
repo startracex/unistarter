@@ -1,7 +1,7 @@
 <script setup>
-import A from "@/components/Link"
+import A from "~/components/Link"
 import config from '@/config';
-import { useUser } from '@/context/user';
+import { useUser } from '~/context/user';
 const user = useUser();
 
 </script>

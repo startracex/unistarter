@@ -9,5 +9,6 @@
       "uni_modules": true,
       // "uniCloud*": true,
       "manifest.json": true,
+      "package.json": true
    }
 }

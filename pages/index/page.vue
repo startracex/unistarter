@@ -1,6 +1,6 @@
 <script setup>
-import A from "@/components/Link.vue"
-import { useUser } from '@/context/user'
+import A from "~/components/Link.vue"
+import { useUser } from '~/context/user'
 const user = useUser()
 </script>
 <template>
@@ -22,7 +22,7 @@ const user = useUser()
 
 <script>
 import config from '@/config.js'
-import { jump } from "@/utils/link"
+import { jump } from "~/utils/link"
 export default {
 	data() {
 		return {

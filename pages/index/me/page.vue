@@ -1,5 +1,5 @@
 <script setup>
-import { useUser } from '@/context/user';
+import { useUser } from '~/context/user';
 const user = useUser();
 </script>
 <template>
@@ -31,7 +31,7 @@ const user = useUser();
 	</view>
 </template>
 <script>
-import { useUser } from '@/context/user'
+import { useUser } from '~/context/user'
 
 export default {
 	setup() {

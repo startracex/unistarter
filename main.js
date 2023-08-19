@@ -1,6 +1,6 @@
 import App from './App'
-import "./styles/base.css"
-import "./styles/withform.css"
+import "~/styles/base.css"
+import "~/styles/withform.css"
 import * as Pinia from 'pinia';
 import { createSSRApp } from 'vue'
 export function createApp() {
@@ -12,6 +12,6 @@ export function createApp() {
 	}
 }
 /* #ifdef H5 */
-import "./styles/h5.css"
+import "~/styles/h5.css"
 window.log = console.log;
 /* #endif */

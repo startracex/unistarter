@@ -1,5 +1,5 @@
 <script setup>
-import A from "@/components/Link"
+import A from "~/components/Link"
 </script>
 <template>
 	<view class="container">
@@ -25,10 +25,10 @@ import A from "@/components/Link"
 </template>
 
 <script>
-import EmailRules from "@/utils/rules/email.js"
-import PasswordRules from "@/utils/rules/password.js"
-import { useUser } from "@/context/user.js"
-import { jump } from "@/utils/link.js"
+import EmailRules from "~/utils/rules/email.js"
+import PasswordRules from "~/utils/rules/password.js"
+import { useUser } from "~/context/user.js"
+import { jump } from "~/utils/link.js"
 export default {
 	data() {
 		return {
