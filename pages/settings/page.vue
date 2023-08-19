@@ -1,5 +1,5 @@
 <script setup>
-import A from "~/components/Link"
+import A from "~/components/Link";
 import config from '@/config';
 import { useUser } from '~/context/user';
 const user = useUser();
@@ -37,7 +37,7 @@ export default {
 		return {
 			version: config.version,
 			author: config.author
-		}
+		};
 	},
 	methods: {
 		checkUpdate() {
@@ -45,7 +45,7 @@ export default {
 		},
 
 	}
-}
+};
 </script>
 
 <style>

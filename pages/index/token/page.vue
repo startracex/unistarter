@@ -1,7 +1,6 @@
 <script setup>
-import { useUser } from "@/context/user.js";
-import { jump } from "@/utils/link";
-import { ref } from "vue";
+import { useUser } from "~/context/user.js";
+import { jump } from "~/utils/link";
 const userhook = useUser();
 if (!userhook.data()) {
 	jump("/login");
@@ -15,17 +14,6 @@ if (!userhook.data()) {
 </template>
 
 <script>
-export default {
-	data() {
-		return {
-
-		}
-	},
-	methods: {
-
-	}
-}
 </script>
 
-<style>
-</style>
+<style></style>

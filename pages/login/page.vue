@@ -1,5 +1,5 @@
 <script setup>
-import A from "~/components/Link"
+import A from "~/components/Link";
 </script>
 <template>
 	<view class="container">
@@ -25,10 +25,10 @@ import A from "~/components/Link"
 </template>
 
 <script>
-import EmailRules from "~/utils/rules/email.js"
-import PasswordRules from "~/utils/rules/password.js"
-import { useUser } from "~/context/user.js"
-import { jump } from "~/utils/link.js"
+import EmailRules from "~/utils/rules/email.js";
+import PasswordRules from "~/utils/rules/password.js";
+import { useUser } from "~/context/user.js";
+import { jump } from "~/utils/link.js";
 export default {
 	data() {
 		return {
@@ -45,34 +45,34 @@ export default {
 				}
 			}
 
-		}
+		};
 	},
 	methods: {
 		submit() {
 
-			const userhook = useUser()
+			const userhook = useUser();
 			this.$refs.form.validate().then(res => {
 				uniCloud.callFunction({
 					name: "testing",
 					data: res
 				}).then(res => {
-					const userdata = res.result.data
-					userhook.login(userdata)
+					const userdata = res.result.data;
+					userhook.login(userdata);
 					uni.showToast({
 						title: '登录成功',
 						icon: 'success',
 						duration: 2000
-					})
+					});
 					setTimeout(() => {
-						jump("/")
+						jump("/");
 					}, 1400);
-				})
+				});
 
 			}).catch(err => {
-			})
+			});
 		}
 	}
-}
+};
 </script>
 
 <style>

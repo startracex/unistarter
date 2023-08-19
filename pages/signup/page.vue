@@ -1,5 +1,5 @@
 <script setup>
-import A from "@/components/Link"
+import A from "@/components/Link";
 </script>
 <template>
 	<view class="container">
@@ -27,16 +27,15 @@ import A from "@/components/Link"
 						登录
 					</text>
 				</A>
-
 			</view>
 		</view>
 	</view>
 </template>
 
 <script>
-import EmailRules from "@/utils/rules/email.js"
-import PasswordRules from "@/utils/rules/password.js"
-import { useUser } from "@/context/user.js"
+import EmailRules from "@/utils/rules/email.js";
+import PasswordRules from "@/utils/rules/password.js";
+import { useUser } from "@/context/user.js";
 export default {
 	data() {
 		return {
@@ -57,42 +56,42 @@ export default {
 					rules: [{
 						validateFunction: function (rule, value, data, callback) {
 							if (value) {
-								return value === data.password
+								return value === data.password;
 							}
-							return false
+							return false;
 						},
 						errorMessage: '密码不一致',
 					}]
 				}
 			}
 
-		}
+		};
 	},
 	methods: {
 		submit() {
-			const userhook = useUser()
+			const userhook = useUser();
 			this.$refs.form.validate().then(res => {
 				uniCloud.callFunction({
 					name: "testing",
 					data: res
 				}).then(res => {
-					const userdata = res.result.data
-					userhook.login(userdata)
+					const userdata = res.result.data;
+					userhook.login(userdata);
 					uni.showToast({
 						title: '注册成功',
 						icon: 'success',
 						duration: 2000
-					})
+					});
 					setTimeout(() => {
-						jump("/")
+						jump("/");
 					}, 1400);
-				})
+				});
 
 			}).catch(err => {
-			})
+			});
 		}
 	}
-}
+};
 </script>
 
 <style>

@@ -1,7 +1,7 @@
 <script setup>
-import A from "~/components/Link.vue"
-import { useUser } from '~/context/user'
-const user = useUser()
+import A from "~/components/Link.vue";
+import { useUser } from '~/context/user';
+const user = useUser();
 </script>
 <template>
 	<uni-notice-bar v-if="notice.text" style="margin-bottom: .2em;" show-get-more show-icon :scrollable="notice.scrollable"
@@ -21,8 +21,8 @@ const user = useUser()
 </template>
 
 <script>
-import config from '@/config.js'
-import { jump } from "~/utils/link"
+import config from '@/config.js';
+import { jump } from "~/utils/link";
 export default {
 	data() {
 		return {
@@ -47,20 +47,20 @@ export default {
 				text: "公告"
 			}
 			]
-		}
+		};
 	},
 	onLoad() {
 
 	},
 	methods: {
 		getMore() {
-			jump(config.notice.url)
+			jump(config.notice.url);
 		}
 	},
 	components: {
 
 	}
-}
+};
 </script>
 
 <style scoped>

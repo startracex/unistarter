@@ -5,5 +5,5 @@ exports.main = async (event, context) => {
          ...event,
          name: "test"
       }
-   }
-}
+   };
+};

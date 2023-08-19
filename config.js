@@ -7,5 +7,5 @@ const config = {
 	},
 	author: "STARTRACEX"
 
-}
-export default config
+};
+export default config;

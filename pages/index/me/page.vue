@@ -31,16 +31,16 @@ const user = useUser();
 	</view>
 </template>
 <script>
-import { useUser } from '~/context/user'
+import { useUser } from '~/context/user';
 
 export default {
 	setup() {
-		const user = useUser()
+		const user = useUser();
 		console.log(user);
 	},
 	data() {
-		const user = useUser()
-		const userinfo = user.data()
+		const user = useUser();
+		const userinfo = user.data();
 		return {
 			formData: {
 				name: user.data("name"),
@@ -59,22 +59,22 @@ export default {
 				extname: 'png',
 				name: 'uniapp-logo.png'
 			},
-		}
+		};
 	},
 	methods: {
 		submit() {
-			const userhook = useUser()
+			const userhook = useUser();
 			this.$refs.form.validate().then(res => {
 				const data = {
 					...res,
 					avatar: this.$refs.ava.files[0]?.url
-				}
-				log(data)
-				userhook.update(data)
-			})
+				};
+				log(data);
+				userhook.update(data);
+			});
 		}
 	},
-}
+};
 </script>
 
 
